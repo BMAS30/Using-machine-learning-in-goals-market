@@ -14,7 +14,7 @@ Team form (last 5 matches); Goal averages scored/conceded; Win rates
 All features were carefully calculated to avoid data leakage so a walk-forward validation approach was implemented:
 At each point in time, the model is retrained on all prior data, then used to predict the probability of Over 2.5 goals for the next match. The classifier used was XGBoost (XGBClassifier) with feature scaling applied via StandardScaler. The result is a file (walk_forward_test_set.csv) containing out-of-sample predictions for the entire 2024–25 season.
 
-### 1– Baseline Strategy (No EV Filter)
+### 1. Baseline Strategy (No EV Filter)
 In the initial approach:
 
 *A bet was placed on Over if ProbOver2.5 > 0.5, and Under otherwise.
@@ -25,7 +25,7 @@ Limitations:
 
 Many bets were placed without edge. This led to inconsistent returns and validated the need to include market odds and value filtering. This version served as a baseline to compare against more refined strategies.
 
-### 2- Value Betting with EV Thresholds
+### 2. Value Betting with EV Thresholds
 To improve results, I added expected value (EV) filtering.
 
 For each match:
