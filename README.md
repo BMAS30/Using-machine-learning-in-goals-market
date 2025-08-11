@@ -17,7 +17,7 @@ At each point in time, the model is retrained on all prior data, then used to pr
 ### 1– Baseline Strategy (No EV Filter)
 In the initial approach:
 
-*A bet was placed on Over if ProbOver25 > 0.5, and Under otherwise.
+*A bet was placed on Over if ProbOver2.5 > 0.5, and Under otherwise.
 *A fixed stake of €100 per match was used.
 *Every prediction was converted into a bet regardless of expected value.
 
@@ -29,6 +29,7 @@ Many bets were placed without edge. This led to inconsistent returns and validat
 To improve results, I added expected value (EV) filtering.
 
 For each match:
+
 ![EV Over formula](https://latex.codecogs.com/svg.image?\text{EV}_{\text{Over}}=\text{ProbOver25}\times\text{Odds}_{\text{Over2.5}})  and 
 
 ![EV Under formula](https://latex.codecogs.com/svg.image?\text{EV}_{\text{Under}}=(1-\text{ProbOver25})\times\text{Odds}_{\text{Under2.5}})
