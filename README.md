@@ -29,6 +29,13 @@ Many bets were placed without edge. This led to inconsistent returns and validat
 To improve results, I added expected value (EV) filtering.
 
 For each match:
+$$
+\text{EV}_{\text{Over}} = \text{ProbOver25} \times \text{Odds}_{\text{Over2.5}}
+$$
+
+$$
+\text{EV}_{\text{Under}} = (1 - \text{ProbOver25}) \times \text{Odds}_{\text{Under2.5}}
+$$
 
 
 
