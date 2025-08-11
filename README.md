@@ -1,4 +1,4 @@
-# Using-machine-learning-in-goals-market
+# Using machine learning in goals market
 ### Introduction
 This project evaluates a machine learning-driven betting strategy for football matches in the Over/Under 2.5 goals market using data found in https://www.football-data.co.uk/. The goal is to determine whether a predictive model, when combined with bookmaker odds, can identify profitable value bets using expected value (EV) in Premier League matches.
 
